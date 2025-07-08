@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "npm run generate-theme-registry && next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && npm run generate-theme-registry && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "generate-theme-registry": "tsx scripts/generate-theme-registry.ts && tsx scripts/generate-registry.ts",
     "prepare": "husky"
